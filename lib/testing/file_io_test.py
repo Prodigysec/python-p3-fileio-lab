@@ -28,4 +28,5 @@ def test_read_file(tmp_path):
     file_content = "This is a test content."
     write_file(file_name, file_content)
     file_content_read = read_file(file_name)
+    print(read_file(file_name))
     assert file_content_read == file_content
